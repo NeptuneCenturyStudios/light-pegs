@@ -2,7 +2,7 @@
 
   <v-app>
     <v-layout>
-      <v-app-bar color="primary" prominent>
+      <!-- <v-app-bar color="primary" prominent>
         <v-toolbar-title>My files</v-toolbar-title>
 
         <v-spacer></v-spacer>
@@ -21,7 +21,7 @@
           About
         </v-btn>
 
-      </v-app-bar>
+      </v-app-bar> -->
 
       <v-main>
         <router-view />
