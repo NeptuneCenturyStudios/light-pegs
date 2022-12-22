@@ -1,6 +1,8 @@
 <template>
-  <div>
+  <div class="d-flex">
+    <div class="ml-auto mr-auto mt-5">
     <PegBoard></PegBoard>
+  </div>
   </div>
 </template>
 
