@@ -142,7 +142,7 @@ $clear-off: rgba(127, 127, 127, .75);
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2rem;
-    background-color: #0a0a0a;
+    background-color: #111111;
     padding: 1rem 0;
 }
 
