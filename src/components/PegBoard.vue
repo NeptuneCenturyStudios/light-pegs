@@ -6,7 +6,7 @@
             <!-- Render the holes -->
             <template v-for="(row, rowIndex) in ROWS" :key="row">
                 <template v-for="col in (rowIndex % 2 === 0 ? EVEN_COLUMNS : ODD_COLUMNS)" :key="col">
-                    <div class="hole" draggable="false" @dragover="dragPegOverHole" @drop="droppedPegOnHole">
+                    <div class="hole" @dragover="dragPegOverHole" @drop="droppedPegOnHole">
 
                     </div>
 
@@ -105,8 +105,14 @@ export default {
             peg.classList = classList;
             peg.draggable = true;
             peg.ondragstart = this.startDraggingPeg;
+            //peg.onclick = this.pegClicked;
             return peg;
-        }
+        },
+        // pegClicked(ev){
+        //     if (ev.c){
+
+        //     }
+        // }
     }
 }
 </script>
@@ -142,7 +148,7 @@ $clear-off: rgba(127, 127, 127, .75);
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2rem;
-    background-color: #111111;
+    background-color: #111;
     padding: 1rem 0;
 }
 
@@ -163,7 +169,7 @@ $clear-off: rgba(127, 127, 127, .75);
 }
 
 .light-pegs .pin-tray .pin-box {
-    background-color: #000;
+    background-color: #111;
     width: 100%;
     padding: 1rem;
     display: flex;
